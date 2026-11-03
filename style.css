@@ -1,0 +1,117 @@
+/* Character Insight — settings panel */
+#ci_settings .ci-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin: 4px 0 8px;
+    font-size: 0.9em;
+}
+#ci_settings .ci-ok {
+    color: var(--active, #6c6);
+}
+#ci_settings .ci-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 4px 0;
+}
+#ci_settings .ci-row .text_pole {
+    max-width: 10em;
+    margin: 0;
+}
+#ci_settings .ci-note {
+    display: block;
+    margin-top: 6px;
+    opacity: 0.75;
+}
+
+/* Character Insight — editor popup */
+.ci-editor {
+    text-align: left;
+}
+.ci-editor h3 {
+    margin: 0 0 6px;
+}
+.ci-editor h4 {
+    margin: 10px 0 4px;
+}
+.ci-editor .ci-badge {
+    margin-left: 6px;
+    padding: 1px 6px;
+    font-size: 0.7em;
+    font-weight: normal;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    opacity: 0.8;
+    vertical-align: middle;
+}
+.ci-editor .ci-hint {
+    margin: 0 0 8px;
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+.ci-editor .ci-field {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 6px 0;
+}
+.ci-editor .ci-field label {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 0.92em;
+}
+.ci-editor .ci-field small {
+    opacity: 0.65;
+}
+.ci-editor .ci-count {
+    margin-left: auto;
+    font-size: 0.8em;
+    opacity: 0.65;
+}
+.ci-editor textarea {
+    width: 100%;
+    margin: 0;
+    resize: vertical;
+}
+.ci-editor input[type='range'] {
+    width: 100%;
+}
+.ci-editor .ci-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78em;
+    opacity: 0.65;
+}
+.ci-editor .ci-pair {
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    border-radius: 8px;
+}
+.ci-editor .ci-pair-head {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.ci-editor .ci-pair-head input {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+.ci-editor .ci-add {
+    display: inline-flex;
+    gap: 6px;
+    width: auto;
+}
+.ci-editor .ci-preview pre {
+    max-height: 260px;
+    overflow: auto;
+    padding: 8px;
+    font-size: 0.8em;
+    white-space: pre-wrap;
+    background: rgb(0 0 0 / 25%);
+    border-radius: 6px;
+}
