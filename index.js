@@ -285,7 +285,11 @@ function buildMvuRulesPrompt(profile, settings) {
             `- ${MVU_KEY}.최근갈등 (string, under 25 words): when {{char}} faces one of the dilemmas, record which one, what they chose, and the aftermath. Otherwise keep the old value.`,
         );
     }
-    lines.push(`JSON Patch paths: /${MVU_KEY}/가면균열, /${MVU_KEY}/기울기/<index>, /${MVU_KEY}/최근갈등.`, '</character_insight_variable_rules>');
+    lines.push(
+        `JSON Patch paths: /${MVU_KEY}/가면균열, /${MVU_KEY}/기울기/<index>, /${MVU_KEY}/최근갈등.`,
+        'The variable-update block is not part of the story and is always required: even when other instructions say to output only the story, finish the story first, then append the variable-update block at the very end of every reply. Never put it inside the thinking or the prose.',
+        '</character_insight_variable_rules>',
+    );
     return lines.join('\n');
 }
 
