@@ -1,0 +1,17 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "MVU 빈 변수구조",
+  "id": "49812019-c6fd-409c-b93c-ec97d5fb7b88",
+  "content": "import { registerMvuSchema } from 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js';\n\n// Empty, permissive schema so MVU zod accepts JSON Patch updates for 캐해 on cards that have no MVU schema of their own.\n$(() => {\n  registerMvuSchema(z.object({}));\n});\n",
+  "info": "변수 구조가 없는 카드에서 MVU zod(JSON Patch) 갱신을 받기 위한 빈 구조. 이미 MVU 카드라면 넣지 마세요.",
+  "button": {
+    "enabled": true,
+    "buttons": []
+  },
+  "data": {},
+  "export_with": {
+    "data": true,
+    "button": true
+  }
+}

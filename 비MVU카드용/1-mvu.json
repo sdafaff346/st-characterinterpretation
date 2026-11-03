@@ -1,0 +1,17 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "mvu",
+  "id": "4de2718e-b3bf-4b08-9a6a-d93d04da63a3",
+  "content": "import 'https://testingcf.jsdelivr.net/gh/MagicalAstrogy/MagVarUpdate/artifact/bundle.js';",
+  "info": "MVU 변수 프레임워크 본체. 이미 MVU 카드라면 넣지 마세요.",
+  "button": {
+    "enabled": true,
+    "buttons": []
+  },
+  "data": {},
+  "export_with": {
+    "data": true,
+    "button": true
+  }
+}
